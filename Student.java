@@ -95,4 +95,12 @@ public class Student {
 
         return sReturn;
     }
+
+    public String getName() {
+        return sName;
+    }
+
+    public String getProgram() {
+        return sProgram;
+    }
 }

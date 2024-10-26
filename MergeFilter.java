@@ -69,11 +69,11 @@ public class MergeFilter extends Filter {
 
         // Citirea unei inregistrari de pe portul de intrare selctat.
         Student objStudent = new Student(pInput.readLine());
-        String result = objStudent.sName + " " + objStudent.sProgram;
 
-        // Scrierea inregistrarii la portul de iesire.
-        this.pOutput.write(objStudent.toString());
+        // Scrierea inregistrarii la portul de iesire (doar nume si specializare).
+        this.pOutput.write(objStudent.getName() + " " + objStudent.getProgram());
         this.pOutput.newLine();
         this.pOutput.flush();
     }
+
 }
